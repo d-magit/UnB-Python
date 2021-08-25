@@ -1,0 +1,2 @@
+n, k = [int(i) for i in input().split()]
+[print(' '.join(str(i) for i in sorted([int(input()) for _ in range(n)], key=lambda x: (-(-(abs(x)%k) if x<0 else abs(x)%k), (x%2), (x if x%2 == 1 else -x)))))]
